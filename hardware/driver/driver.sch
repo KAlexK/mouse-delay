@@ -1,0 +1,119 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 61DC83BA
+P 4150 2900
+F 0 "J1" H 4068 3117 50  0000 C CNN
+F 1 "Conn_01x02" H 4068 3026 50  0000 C CNN
+F 2 "" H 4150 2900 50  0001 C CNN
+F 3 "~" H 4150 2900 50  0001 C CNN
+	1    4150 2900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J3
+U 1 1 61DC89E5
+P 5900 2900
+F 0 "J3" H 5980 2892 50  0000 L CNN
+F 1 "Conn_01x02" H 5980 2801 50  0000 L CNN
+F 2 "" H 5900 2900 50  0001 C CNN
+F 3 "~" H 5900 2900 50  0001 C CNN
+	1    5900 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 61DCA40E
+P 4150 3600
+F 0 "J2" H 4068 3817 50  0000 C CNN
+F 1 "Conn_01x02" H 4068 3726 50  0000 C CNN
+F 2 "" H 4150 3600 50  0001 C CNN
+F 3 "~" H 4150 3600 50  0001 C CNN
+	1    4150 3600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:D D1
+U 1 1 61DCBAFF
+P 5350 3100
+F 0 "D1" V 5304 3180 50  0000 L CNN
+F 1 "PG208" V 5395 3180 50  0000 L CNN
+F 2 "" H 5350 3100 50  0001 C CNN
+F 3 "~" H 5350 3100 50  0001 C CNN
+	1    5350 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L Transistor_BJT:TIP120 Q1
+U 1 1 61DCC71F
+P 5250 3600
+F 0 "Q1" H 5457 3646 50  0000 L CNN
+F 1 "TIP120" H 5457 3555 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 5450 3525 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/TIP120-D.PDF" H 5250 3600 50  0001 L CNN
+	1    5250 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 61DCDC43
+P 4700 3600
+F 0 "R1" V 4493 3600 50  0000 C CNN
+F 1 "1k" V 4584 3600 50  0000 C CNN
+F 2 "" V 4630 3600 50  0001 C CNN
+F 3 "~" H 4700 3600 50  0001 C CNN
+	1    4700 3600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4350 2900 5350 2900
+Wire Wire Line
+	5350 2950 5350 2900
+Connection ~ 5350 2900
+Wire Wire Line
+	5350 2900 5700 2900
+Wire Wire Line
+	5350 3400 5350 3300
+Wire Wire Line
+	5350 3300 5650 3300
+Wire Wire Line
+	5650 3300 5650 3000
+Wire Wire Line
+	5650 3000 5700 3000
+Connection ~ 5350 3300
+Wire Wire Line
+	5350 3300 5350 3250
+Wire Wire Line
+	5050 3600 4850 3600
+Wire Wire Line
+	4550 3600 4350 3600
+Wire Wire Line
+	4350 3700 4750 3700
+Wire Wire Line
+	4750 3700 4750 3850
+Wire Wire Line
+	4750 3850 4950 3850
+Wire Wire Line
+	5350 3850 5350 3800
+Wire Wire Line
+	4350 3000 4950 3000
+Wire Wire Line
+	4950 3000 4950 3850
+Connection ~ 4950 3850
+Wire Wire Line
+	4950 3850 5350 3850
+$EndSCHEMATC
