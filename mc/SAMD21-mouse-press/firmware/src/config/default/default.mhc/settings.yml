@@ -1,0 +1,14 @@
+configName: default
+folderName: usb-d-test-01
+format_version: v1.0
+frameworkPath: ..\..\..\harmony\v3
+processor: ATSAMD21G18A
+projectName: usb-d-test-01
+settings:
+  PackageFilter: bsp;core;core_apps_pic32mx;core_apps_sam_d21_da1;csp;csp_apps_pic32mx;csp_apps_sam_d21_da1;dev_packs;quick_docs;reference_apps;usb;usb_apps_device;usb_apps_dual_role;usb_apps_host;usb_apps_multi_controller
+  FORCE_OPTIMIZATION: 'false'
+  GENERATE_BACKUP: 'true'
+  TRUSTZONE: 'false'
+  CMSISPath: .\dev_packs\arm\CMSIS\5.8.0
+  MERGE_STRATEGY: USER_ALL
+  DFPPath: .\dev_packs\Microchip\SAMD21_DFP\3.4.116\samd21a\atdf\ATSAMD21G18A.atdf
