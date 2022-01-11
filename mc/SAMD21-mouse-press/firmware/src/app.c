@@ -218,6 +218,18 @@ void TCC0_Callback(uint32_t __attribute__((unused)) status, uintptr_t __attribut
   LED_BLUE_Off(); // Выключаем второй синий светодиод
 }
 
+void EIC_InterruptHandler(void)
+{
+  if (appData.delayStart) // Если запущено измерение задержки
+  {
+    appData.delay1_val = TCC1_Timer24bitCounterGet(); // Сохраняем значение первой задержки - от нажатия кнопки до замыкания контактов
+    LED_Off(); // Выключаем первый синий светодиод
+    appData.delayStart = false; // Сохраняем только первое замыкание контактов
+  }
+  /* Clear interrupt flag */
+  EIC_REGS->EIC_INTFLAG = (1UL << EIC_PIN_11);
+}
+
 // *****************************************************************************
 // *****************************************************************************
 // Section: Application Initialization and State Machine Functions
@@ -242,7 +254,7 @@ void APP_Initialize(void)
   appData.epDataReadPending = false;
   appData.epDataWritePending = false;
   appData.altSetting = 0;
-  EIC_CallbackRegister(EIC_PIN_11, EIC11_Callback, 0);
+//  EIC_CallbackRegister(EIC_PIN_11, EIC11_Callback, 0);
   TCC0_TimerCallbackRegister(TCC0_Callback, 0);
   appData.delayStart = false; // Не запущено измерение задержки
   LED_Off(); // Выключаем все светодиоды

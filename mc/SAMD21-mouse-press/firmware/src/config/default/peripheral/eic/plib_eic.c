@@ -148,32 +148,4 @@ void EIC_CallbackRegister(EIC_PIN pin, EIC_CALLBACK callback, uintptr_t context)
     }
 }
 
-void EIC_InterruptHandler(void)
-{
-    uint8_t currentChannel = 0;
-    uint32_t eicIntFlagStatus = 0;
-
-    /* Find any triggered channels, run associated callback handlers */
-    for (currentChannel = 0; currentChannel < EXTINT_COUNT; currentChannel++)
-    {
-        /* Verify if the EXTINT x Interrupt Pin is enabled */
-        if ((eicCallbackObject[currentChannel].eicPinNo == currentChannel))
-        {
-            /* Read the interrupt flag status */
-            eicIntFlagStatus = EIC_REGS->EIC_INTFLAG & (1UL << currentChannel);
-
-            if (eicIntFlagStatus)
-            {
-                /* Find any associated callback entries in the callback table */
-                if ((eicCallbackObject[currentChannel].callback != NULL))
-                {
-                    eicCallbackObject[currentChannel].callback(eicCallbackObject[currentChannel].context);
-                }
-
-                /* Clear interrupt flag */
-                EIC_REGS->EIC_INTFLAG = (1UL << currentChannel);
-            }
-        }
-    }
-}
 
