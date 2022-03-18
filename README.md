@@ -11,6 +11,10 @@ Main controller is [Seeeduino Xiao](www.seeedstudio.com/Seeeduino-XIAO-Arduino-M
  
 ![Seeeduino Xiao](https://github.com/KAlexK/mouse-delay/blob/main/pics/Seeeduino-XIAO-pin-out.jpg)
  
+Matching pins of the board and ports of the microcontroller:
+
+![Pinout](https://github.com/KAlexK/mouse-delay/blob/main/pics/pin-out.png)
+
 The mouse button is pressed using the HDD head drive:
  
 ![HDD head drive](https://github.com/KAlexK/mouse-delay/blob/main/pics/stand-07.jpg)
@@ -30,5 +34,11 @@ Assembled driver:
 ![Assembled driver](https://github.com/KAlexK/mouse-delay/blob/main/pics/driver-01.jpg)
 
 ![Assembled driver](https://github.com/KAlexK/mouse-delay/blob/main/pics/driver-02.jpg)
+
+To measure the delay (1st delay) from the signal transmission to the connection of the mouse button switch contacts, you need to solder two wires to the button contacts. Example:
+
+![Button contacts](https://github.com/KAlexK/mouse-delay/blob/main/pics/test-mouse-02.jpg)
+
+
 
 
