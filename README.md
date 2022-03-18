@@ -15,4 +15,10 @@ The mouse button is pressed using the HDD head drive:
  
 ![HDD head drive](https://github.com/KAlexK/mouse-delay/blob/main/pics/stand-07.jpg)
  
-Assembled stand
+Assembled stand:
+
+![Assembled stand](https://github.com/KAlexK/mouse-delay/blob/main/pics/stand-04.jpg)
+
+More pics: [01](https://github.com/KAlexK/mouse-delay/blob/main/pics/stand-05.jpg), [02](https://github.com/KAlexK/mouse-delay/blob/main/pics/stand-06.jpg), [03](https://github.com/KAlexK/mouse-delay/blob/main/pics/stand-08.jpg), [04](https://github.com/KAlexK/mouse-delay/blob/main/pics/stand-09.jpg).
+
+
