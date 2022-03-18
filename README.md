@@ -21,4 +21,14 @@ Assembled stand:
 
 More pics: [01](https://github.com/KAlexK/mouse-delay/blob/main/pics/stand-05.jpg), [02](https://github.com/KAlexK/mouse-delay/blob/main/pics/stand-06.jpg), [03](https://github.com/KAlexK/mouse-delay/blob/main/pics/stand-08.jpg), [04](https://github.com/KAlexK/mouse-delay/blob/main/pics/stand-09.jpg).
 
+Driver diagram for HDD drive coil:
+
+![Driver diagram](https://github.com/KAlexK/mouse-delay/blob/main/pics/schematic.png)
+
+Assembled driver:
+
+![Assembled driver](https://github.com/KAlexK/mouse-delay/blob/main/pics/driver-01.jpg)
+
+![Assembled driver](https://github.com/KAlexK/mouse-delay/blob/main/pics/driver-02.jpg)
+
 
