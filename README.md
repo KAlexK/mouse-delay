@@ -29,6 +29,8 @@ Driver diagram for HDD drive coil:
 
 ![Driver diagram](https://github.com/KAlexK/mouse-delay/blob/main/pics/schematic.png)
 
+See [KiCad project](https://github.com/KAlexK/mouse-delay/tree/main/hardware/driver).
+
 Assembled driver:
 
 ![Assembled driver](https://github.com/KAlexK/mouse-delay/blob/main/pics/driver-01.jpg)
@@ -39,8 +41,22 @@ To measure the delay (1st delay) from the signal transmission to the connection 
 
 ![Button contacts](https://github.com/KAlexK/mouse-delay/blob/main/pics/test-mouse-02.jpg)
 
-##Firmware
+## Firmware
 
 [Project for Seeeduino Xiao board.](https://github.com/KAlexK/mouse-delay/tree/main/mc)
 
 The firmware is compiled using MPLAB X IDE v5.50 and XC32 3.01. The initial configuration is created using MPLAB Harmony v3. How to upload the firmware to Seeeduino Xiao board: 1. [Enter Bootloader Mode](https://wiki.seeedstudio.com/Seeeduino-XIAO/#enter-bootloader-mode). 2. Copy file bin.uf2 to Seeeduino Xiao, which appeared as a disk.
+
+## Software
+
+[Visual Studio 2017 Project.](https://github.com/KAlexK/mouse-delay/tree/main/host/mouse-delay)
+
+[wxWidgets 3.1.2](https://github.com/wxWidgets/wxWidgets/releases/tag/v3.1.2/) and [libusb-1.0.lib] (http://libusb.info) are used. These dlls are needed for the program to work:
+- libusb-1.0.dll
+- wxbase312ud_vc141.dll
+- wxbase312ud_xml_vc141.dll
+- wxmsw312ud_core_vc141.dll
+- wxmsw312ud_html_vc141.dll
+- wxmsw312ud_xrc_vc141.dll
+
+
