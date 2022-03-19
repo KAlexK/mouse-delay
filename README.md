@@ -37,7 +37,7 @@ Assembled driver:
 
 ![Assembled driver](https://github.com/KAlexK/mouse-delay/blob/main/pics/driver-02.jpg)
 
-To measure the delay (1st delay) from the signal transmission to the connection of the mouse button switch contacts, you need to solder two wires to the button contacts. Example:
+To measure the delay (1st delay) from the signal transmission to the connection of the mouse button switch contacts, you need to solder two wires to the button contacts. It is better to put the positive wire through a 1k resistor. Example:
 
 ![Button contacts](https://github.com/KAlexK/mouse-delay/blob/main/pics/test-mouse-02.jpg)
 
@@ -61,5 +61,14 @@ The firmware is compiled using MPLAB X IDE v5.50 and XC32 3.01. The initial conf
 
 ## How to use
 
+- Install mouse on stand (see the picture above).
+- Connect all together (see the connection diagram), including DC 12V source to coil driver and optional wires from mouse button.
+- Start mouse-delay.exe. Press "Connect" button. Enter "Number of tests" - 100 for example. Enter "Delay between tests, ms", 500 is good. Check "1st delay" if you want to measure 1st delay and wires from mouse button are connected. Place mouse cursor on yellow area. Everything is ready to run the test!
+- To start measurements press "Start!" button using the keyboard.
 
+After the end of the test, the program window will look like this:
+
+![Program window](https://github.com/KAlexK/mouse-delay/blob/main/pics/soft.png)
+
+You can copy the results from the window marked as "Delays:".
 
