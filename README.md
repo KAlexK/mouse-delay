@@ -1,5 +1,6 @@
 # mouse-delay
 Determining the delay from clicking on the mouse button to WM_LBUTTONDOWN (or WM_LBUTTONDBLCLK) message. The description [is here (in Russian)](https://www.ixbt.com/printers/mouse-button-delay-method.html).
+[Video with a demonstration of the work (only 10 clicks).](https://youtu.be/kyXcPb9aahc)
  
 ## Hardware
 
@@ -71,4 +72,3 @@ After the end of the test, the program window will look like this:
 ![Program window](https://github.com/KAlexK/mouse-delay/blob/main/pics/soft.png)
 
 You can copy the results from the window marked as "Delays:".
-
