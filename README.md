@@ -43,9 +43,4 @@ To measure the delay (1st delay) from the signal transmission to the connection 
 
 [Project for Seeeduino Xiao board.](https://github.com/KAlexK/mouse-delay/tree/main/mc)
 
-The firmware is compiled using MPLAB X IDE v5.50 and XC32 3.01. The initial configuration is created using MPLAB Harmony v3. How to upload the firmware to Seeeduino Xiao board: 1. [Enter Bootloader Mode](https://wiki.seeedstudio.com/Seeeduino-XIAO/#enter-bootloader-mode)
-
-
-
-
-
+The firmware is compiled using MPLAB X IDE v5.50 and XC32 3.01. The initial configuration is created using MPLAB Harmony v3. How to upload the firmware to Seeeduino Xiao board: 1. [Enter Bootloader Mode](https://wiki.seeedstudio.com/Seeeduino-XIAO/#enter-bootloader-mode). 2. Copy file bin.uf2 to Seeeduino Xiao, which appeared as a disk.
