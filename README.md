@@ -51,12 +51,15 @@ The firmware is compiled using MPLAB X IDE v5.50 and XC32 3.01. The initial conf
 
 [Visual Studio 2017 Project.](https://github.com/KAlexK/mouse-delay/tree/main/host/mouse-delay)
 
-[wxWidgets 3.1.2](https://github.com/wxWidgets/wxWidgets/releases/tag/v3.1.2/) and [libusb-1.0.lib] (http://libusb.info) are used. These dlls are needed for the program to work:
+[wxWidgets 3.1.2](https://github.com/wxWidgets/wxWidgets/releases/tag/v3.1.2/) and [libusb-1.0.lib](http://libusb.info) are used. These dlls are needed for the program to work:
 - libusb-1.0.dll
 - wxbase312ud_vc141.dll
 - wxbase312ud_xml_vc141.dll
 - wxmsw312ud_core_vc141.dll
 - wxmsw312ud_html_vc141.dll
 - wxmsw312ud_xrc_vc141.dll
+
+## How to use
+
 
 
